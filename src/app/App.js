@@ -20,6 +20,7 @@ const App = () => {
         return () => {
             window.removeEventListener("resize", windowResizeHandler)
         };
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return (

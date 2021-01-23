@@ -1,15 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './app/App';
 import store from './store/store';
+import {StyleRoot} from 'radium';
 import {Provider} from 'react-redux';
 import * as serviceWorker from './serviceWorker';
+
+import 'normalize.css';
 
 ReactDOM.render(
     <React.StrictMode>
         <Provider store={store}>
-            <App/>
+            <StyleRoot>
+                <App/>
+            </StyleRoot>
         </Provider>
     </React.StrictMode>,
     document.getElementById('root')
