@@ -3,6 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {selectWiw, updateWiw} from "../store/appSlice";
 
 import './App.css';
+import {TestButton} from "../components/Button/Button";
 
 /**
  * Root component.
@@ -25,7 +26,7 @@ const App = () => {
 
     return (
         <div>
-            {wiw}
+            <TestButton/>
         </div>
     );
 };
