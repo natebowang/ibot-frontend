@@ -3,7 +3,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {selectWiw, updateWiw} from "../store/appSlice";
 
 import './App.css';
-import {TestButton} from "../components/Button/Button";
+import NavBar from "../components/NavBar/NavBar";
 
 /**
  * Root component.
@@ -26,7 +26,7 @@ const App = () => {
 
     return (
         <div>
-            <TestButton/>
+            <NavBar/>
         </div>
     );
 };

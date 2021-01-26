@@ -1,6 +1,10 @@
 import React, {useState} from "react";
 import Radium from "radium";
 
+/**
+ * Primary button component
+ * @type {function(...[*]=)}
+ */
 const Button = Radium(({style, onClick: clickHandler, children}) => {
     return (
         <button style={{...buttonStyle, ...style}} onClick={clickHandler}>
@@ -29,6 +33,11 @@ const buttonStyle = {
 
 export default Button;
 
+/**
+ * Button component for test
+ * @returns {*}
+ * @constructor
+ */
 export const TestButton = () => {
     const [counter, setCounter] = useState(0);
 
