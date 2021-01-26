@@ -53,8 +53,8 @@ const placeHolderStyle = {
 const NavBarDesktop = () => {
     return (
         <>
-            <IBotLogo/>
-            <LinksUser/>
+            <IBotLogo flex={2}/>
+            <LinksUser flex={4}/>
         </>
     )
 };
@@ -63,9 +63,9 @@ const NavBarDesktop = () => {
 const NavBarMobile = () => {
     return (
         <>
-            <Links/>
-            <IBotLogo/>
-            <User/>
+            <Links flex={1}/>
+            <IBotLogo flex={1}/>
+            <User flex={1}/>
         </>
     )
 };

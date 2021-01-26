@@ -1,13 +1,13 @@
 import React from 'react';
 import {render} from '@testing-library/react';
-import {Provider} from 'react-redux';
-import store from '../store/store';
-import App from './App';
+import store from '../../store/store';
+import WindowResizeHandler from "./WindowResizeHandler";
+import {Provider} from "react-redux";
 
 test('renders App and resize window inner width, dispatch updateWiw. ', () => {
     render(
         <Provider store={store}>
-            <App/>
+            <WindowResizeHandler/>
         </Provider>
     );
 

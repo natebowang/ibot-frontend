@@ -1,8 +1,8 @@
 import React from "react";
 
-const LinksUser = () => {
+const LinksUser = ({flex}) => {
     return (
-        <ul style={linksUserBoxStyle}>
+        <ul style={{...linksUserBoxStyle}}>
             LinksUser
         </ul>
     )

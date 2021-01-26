@@ -1,34 +1,27 @@
-import React, {useEffect} from 'react';
-import {useDispatch, useSelector} from "react-redux";
-import {selectWiw, updateWiw} from "../store/appSlice";
+import React  from 'react';
+import {Provider} from "react-redux";
 
 import './App.css';
 import NavBar from "../components/NavBar/NavBar";
+import store from "../store/store";
+import {BrowserRouter} from "react-router-dom";
+import {StyleRoot} from "radium";
+import WindowResizeHandler from "../components/WindowResizeHandler/WindowResizeHandler";
 
 /**
  * Root component.
  */
-const App = () => {
-    const dispatch = useDispatch();
-    const wiw = useSelector(selectWiw);
-
-    const windowResizeHandler = (e) => {
-        dispatch(updateWiw());
-    };
-
-    useEffect(() => {
-        window.addEventListener("resize", windowResizeHandler);
-        return () => {
-            window.removeEventListener("resize", windowResizeHandler)
-        };
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, []);
-
-    return (
-        <div>
-            <NavBar/>
-        </div>
-    );
-};
+const App = () => (
+    <React.StrictMode>
+        <Provider store={store}>
+            <BrowserRouter>
+                <StyleRoot>
+                    <WindowResizeHandler/>
+                    <NavBar/>
+                </StyleRoot>
+            </BrowserRouter>
+        </Provider>
+    </React.StrictMode>
+);
 
 export default App;
