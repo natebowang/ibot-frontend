@@ -3,14 +3,12 @@ import {NAV_BAR_HEIGHT, MOBILE_PORTRAIT_WIDTH} from "../../app/config";
 import {selectWiw} from "../../store/appSlice";
 import {useSelector} from "react-redux";
 import IBotLogo from "./IBotLogo";
-import Links from "./Links";
+import LinksDropDown from "./LinksDropDown";
 import User from "./User";
 import LinksUser from "./LinksUser";
 
 /**
  * Navigation bar
- * @returns {*}
- * @constructor
  */
 const NavBar = () => {
     const wiw = useSelector(selectWiw);
@@ -50,6 +48,9 @@ const placeHolderStyle = {
     height: NAV_BAR_HEIGHT,
 };
 
+/**
+ * Wide navigation bar for desktop screen
+ */
 const NavBarDesktop = () => {
     return (
         <>
@@ -59,11 +60,13 @@ const NavBarDesktop = () => {
     )
 };
 
-
+/**
+ * Narrow navigation bar for mobile screen
+ */
 const NavBarMobile = () => {
     return (
         <>
-            <Links flex={0}/>
+            <LinksDropDown flex={0}/>
             <IBotLogo flex={0}/>
             <User flex={0}/>
         </>

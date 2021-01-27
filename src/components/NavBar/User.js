@@ -2,6 +2,9 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import {BiUserCircle} from 'react-icons/bi';
 
+/**
+ * User icon for mobile screen
+ */
 const User = () => {
     return (
         <NavLink to={'/login'} style={linkStyle} activeStyle={activeLinkStyle}>
@@ -19,6 +22,9 @@ const linkIconStyle = {
     margin: '0px 0px -2px 0',
 };
 
-const activeLinkStyle = {};
+const activeLinkStyle = {
+    fontWeight: 'bold',
+    color: "#6BBDDB"
+};
 
 export default User;

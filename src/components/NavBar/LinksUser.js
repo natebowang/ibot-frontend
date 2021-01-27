@@ -2,6 +2,9 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import {BiBot, BiPackage, BiTrophy} from "react-icons/bi";
 
+/**
+ * Link and user icons for mobile screen
+ */
 const LinksUser = ({flex}) => {
     return (
         <ul style={{...linksUserBoxStyle, flex: flex}}>
@@ -58,6 +61,7 @@ const userStyle = {
 
 const activeLinkStyle = {
     fontWeight: 'bold',
+    color: "#6BBDDB"
 };
 
 export default LinksUser;
