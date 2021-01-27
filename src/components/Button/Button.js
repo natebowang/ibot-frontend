@@ -38,7 +38,7 @@ export default Button;
  * @returns {*}
  * @constructor
  */
-export const TestButton = () => {
+export const ButtonExample = () => {
     const [counter, setCounter] = useState(0);
 
     const style = {

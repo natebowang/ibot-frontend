@@ -2,6 +2,9 @@ import React, {useEffect} from 'react';
 import {useDispatch} from "react-redux";
 import {updateWiw} from "../../store/appSlice";
 
+/**
+ * Window resize event handler component. It updates store when window resized.
+ */
 const WindowResizeHandler = () => {
     const dispatch = useDispatch();
 

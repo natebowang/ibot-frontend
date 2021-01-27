@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dropdown menu snapshot test 1`] = `
+Object {
+  "children": Array [
+    Object {
+      "children": Array [
+        Object {
+          "children": Array [
+            "v",
+          ],
+          "props": Object {},
+          "type": "div",
+        },
+      ],
+      "props": Object {
+        "onClick": [Function],
+        "style": Object {
+          "backgroundColor": "green",
+        },
+      },
+      "type": "button",
+    },
+  ],
+  "props": Object {},
+  "type": "div",
+}
+`;
