@@ -63,9 +63,9 @@ const NavBarDesktop = () => {
 const NavBarMobile = () => {
     return (
         <>
-            <Links flex={1}/>
-            <IBotLogo flex={1}/>
-            <User flex={1}/>
+            <Links flex={0}/>
+            <IBotLogo flex={0}/>
+            <User flex={0}/>
         </>
     )
 };
