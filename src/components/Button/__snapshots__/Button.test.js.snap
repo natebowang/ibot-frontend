@@ -9,8 +9,6 @@ exports[`Primary button snapshot test 1`] = `
   onKeyDown={[Function]}
   onKeyUp={[Function]}
   onMouseDown={[Function]}
-  onMouseEnter={[Function]}
-  onMouseLeave={[Function]}
   style={
     Object {
       "backgroundColor": "orange",

@@ -1,4 +1,5 @@
 import React, {useState, useEffect, useCallback} from "react";
+import Button from "../Button/Button";
 
 /**
  * Dropdown menu
@@ -42,12 +43,12 @@ const Dropdown = ({toggleButtonIcon, toggleButtonStyle, children}) => {
 
     return (
         <div>
-            <button
+            <Button
                 onClick={toggleHandler}
                 style={toggleButtonStyle}
             >
                 {toggleButtonIcon}
-            </button>
+            </Button>
             {ifOpen ? children : null}
         </div>
     );

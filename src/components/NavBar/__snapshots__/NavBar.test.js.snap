@@ -1,3 +1,657 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Primary button snapshot test 1`] = `null`;
+exports[`Desktop navigation bar snapshot test 1`] = `
+<div
+  data-radium={true}
+>
+  <div>
+    <nav
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "black",
+          "color": "white",
+          "display": "flex",
+          "height": "4rem",
+          "justifyContent": "space-between",
+          "left": "0",
+          "padding": "0 2rem",
+          "position": "fixed",
+          "top": "0",
+          "width": "100%",
+          "zIndex": "1000",
+        }
+      }
+    >
+      <a
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "white",
+            "flex": 2,
+            "fontFamily": "\\"Audiowide\\", sans-serif, monospace",
+            "fontSize": "1.8rem",
+            "textDecoration": "none",
+          }
+        }
+      >
+        iBot
+      </a>
+      <ul
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flex": 4,
+            "justifyContent": "space-between",
+            "listStyle": "none",
+            "margin": "0",
+            "maxWidth": "320px",
+            "padding": "0",
+          }
+        }
+      >
+        <a
+          aria-current={null}
+          href="/class"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.9rem",
+              "textDecoration": "none",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+                "fontSize": "1.1rem",
+                "margin": "0px 7px -3px 0",
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5.058 8.005L11.972 11.872 14.653 10.382 7.819 6.477zM18 10.825L18 14 16 15 16 11.944 13.002 13.622 13 19.301 20 15.411 20 9.706zM11 13.621L4 9.705 4 15.411 11 19.301zM16.697 9.247L18.941 8 12.02 4.153 9.867 5.344z"
+              fill="none"
+            />
+            <path
+              d="M21.993,7.95c-0.003-0.072-0.01-0.145-0.029-0.214c-0.007-0.025-0.021-0.049-0.03-0.074 c-0.021-0.057-0.04-0.113-0.07-0.165c-0.016-0.027-0.038-0.049-0.057-0.075c-0.032-0.045-0.063-0.091-0.102-0.13 c-0.023-0.022-0.053-0.04-0.078-0.061c-0.039-0.032-0.075-0.067-0.12-0.094c-0.004-0.003-0.009-0.003-0.014-0.006 c-0.003-0.002-0.005-0.004-0.008-0.006l-8.979-4.99c-0.301-0.168-0.667-0.167-0.97-0.001l-9.021,4.99 C2.512,7.127,2.509,7.131,2.504,7.134c-0.003,0.001-0.007,0.002-0.01,0.004C2.459,7.158,2.433,7.187,2.4,7.211 C2.364,7.238,2.326,7.262,2.294,7.293C2.264,7.324,2.241,7.36,2.215,7.395C2.188,7.43,2.158,7.461,2.136,7.499 C2.11,7.542,2.096,7.591,2.077,7.638c-0.014,0.033-0.032,0.064-0.041,0.1c-0.019,0.067-0.025,0.139-0.029,0.21 C2.006,7.965,2,7.98,2,7.998v0.001V8v8c0,0.363,0.197,0.698,0.515,0.874l8.978,4.987l0.001,0.001c0.001,0,0.001,0,0.002,0.001 l0.02,0.011c0.043,0.024,0.09,0.037,0.135,0.054c0.032,0.013,0.063,0.03,0.097,0.039C11.829,21.988,11.915,22,12,22 s0.171-0.012,0.254-0.033c0.033-0.009,0.064-0.026,0.097-0.039c0.045-0.017,0.092-0.029,0.135-0.054l0.02-0.011 c0.001-0.001,0.001-0.001,0.002-0.001l0.001-0.001l8.978-4.987C21.803,16.698,22,16.363,22,16V8V7.999V7.998 C22,7.981,21.994,7.967,21.993,7.95z M11.972,11.872L5.058,8.005l2.762-1.528l6.834,3.905L11.972,11.872z M12.02,4.153L18.941,8 l-2.244,1.247l-6.83-3.903L12.02,4.153z M4,9.705l7,3.916v5.68l-7-3.89V9.705z M13,19.301l0.002-5.679L16,11.944V15l2-1v-3.175 l2-1.119v5.705L13,19.301z"
+            />
+          </svg>
+           课程
+        </a>
+        <a
+          aria-current={null}
+          href="/championship"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.9rem",
+              "textDecoration": "none",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+                "fontSize": "1.1rem",
+                "margin": "0px 7px -3px 0",
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21,4h-3V3c0-0.553-0.447-1-1-1H7C6.447,2,6,2.447,6,3v1H3C2.447,4,2,4.447,2,5v3c0,4.31,1.799,6.91,4.819,7.012 c0.88,1.509,2.396,2.597,4.181,2.898V20H9v2h6v-2h-2v-2.09c1.784-0.302,3.301-1.39,4.181-2.898C20.201,14.91,22,12.31,22,8V5 C22,4.447,21.553,4,21,4z M4,8V6h2v6.021v0.809C4.216,12.078,4,9.299,4,8z M12,16c-2.206,0-4-1.794-4-4V4h8v8 C16,14.206,14.206,16,12,16z M18,12.83v-0.809V6h2v2C20,9.299,19.784,12.078,18,12.83z"
+            />
+          </svg>
+           比赛
+        </a>
+        <a
+          aria-current={null}
+          href="/teachers"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.9rem",
+              "textDecoration": "none",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+                "fontSize": "1.1rem",
+                "margin": "0px 7px -3px 0",
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.928,11.607c-0.202-0.488-0.635-0.605-0.928-0.633V8c0-1.103-0.897-2-2-2h-6V4.61c0.305-0.274,0.5-0.668,0.5-1.11 C13.5,2.672,12.828,2,12,2s-1.5,0.672-1.5,1.5c0,0.442,0.195,0.836,0.5,1.11V6H5C3.897,6,3,6.897,3,8v2.997 C2.951,11,2.918,11.003,2.918,11.003C2.395,11.04,1.99,11.476,1.99,12v2c0,0.553,0.447,1,1,1H3v5c0,1.103,0.897,2,2,2h14 c1.103,0,2-0.897,2-2v-5c0.553,0,1-0.447,1-1v-1.938C22.011,11.909,21.988,11.753,21.928,11.607z M5,20V8h14l0.001,3.996 C19.001,11.998,19,11.999,19,12v2c0,0.002,0.001,0.003,0.001,0.005L19.002,20H5z"
+            />
+            <ellipse
+              cx="8.5"
+              cy="12"
+              rx="1.5"
+              ry="2"
+            />
+            <ellipse
+              cx="15.5"
+              cy="12"
+              rx="1.5"
+              ry="2"
+            />
+            <path
+              d="M8 16H16V18H8z"
+            />
+          </svg>
+           教师
+        </a>
+        <div />
+        <a
+          aria-current={null}
+          href="/login"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "1.1rem",
+              "textDecoration": "none",
+            }
+          }
+        >
+          登录
+        </a>
+        <a
+          aria-current={null}
+          href="/signup"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "1.1rem",
+              "textDecoration": "none",
+            }
+          }
+        >
+          注册
+        </a>
+      </ul>
+    </nav>
+    <div
+      style={
+        Object {
+          "backgroundColor": "black",
+          "height": "4rem",
+        }
+      }
+    />
+  </div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Mobile navigation bar fold list snapshot test 1`] = `
+<div
+  data-radium={true}
+>
+  <div>
+    <nav
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "black",
+          "color": "white",
+          "display": "flex",
+          "height": "4rem",
+          "justifyContent": "space-between",
+          "left": "0",
+          "padding": "0 2rem",
+          "position": "fixed",
+          "top": "0",
+          "width": "100%",
+          "zIndex": "1000",
+        }
+      }
+    >
+      <div>
+        <button
+          data-radium={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          style={
+            Object {
+              "backgroundColor": "black",
+              "border": "none",
+              "borderRadius": "2px",
+              "color": "white",
+              "cursor": "pointer",
+              "fontSize": "1.8rem",
+              "margin": "0px 0px -2px 0",
+              "padding": "0",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H6V8H4zM4 11H6V13H4zM4 16H6V18H4zM20 8L20 6 18.8 6 9.2 6 8.023 6 8.023 8 9.2 8 18.8 8zM8 11H20V13H8zM8 16H20V18H8z"
+            />
+          </svg>
+        </button>
+      </div>
+      <a
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "white",
+            "flex": 0,
+            "fontFamily": "\\"Audiowide\\", sans-serif, monospace",
+            "fontSize": "1.8rem",
+            "textDecoration": "none",
+          }
+        }
+      >
+        iBot
+      </a>
+      <a
+        aria-current={null}
+        href="/login"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": "1.6rem",
+              "margin": "0px 0px -2px 0",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12,8c-1.178,0-2,0.822-2,2s0.822,2,2,2s2-0.822,2-2S13.178,8,12,8z"
+            fill="none"
+          />
+          <path
+            d="M12,4c-4.337,0-8,3.663-8,8c0,2.176,0.923,4.182,2.39,5.641c0.757-1.8,2.538-3.068,4.61-3.068h2 c2.072,0,3.854,1.269,4.61,3.068C19.077,16.182,20,14.176,20,12C20,7.663,16.337,4,12,4z M12,14c-2.28,0-4-1.72-4-4s1.72-4,4-4 s4,1.72,4,4S14.28,14,12,14z"
+            fill="none"
+          />
+          <path
+            d="M13,16.572h-2c-1.432,0-2.629,1.01-2.926,2.354C9.242,19.604,10.584,20,12,20s2.758-0.396,3.926-1.073 C15.629,17.582,14.432,16.572,13,16.572z"
+            fill="none"
+          />
+          <path
+            d="M12,2C6.579,2,2,6.579,2,12c0,3.189,1.592,6.078,4,7.924V20h0.102C7.77,21.245,9.813,22,12,22s4.23-0.755,5.898-2H18 v-0.076c2.408-1.846,4-4.734,4-7.924C22,6.579,17.421,2,12,2z M8.074,18.927c0.297-1.345,1.494-2.354,2.926-2.354h2 c1.432,0,2.629,1.01,2.926,2.354C14.758,19.604,13.416,20,12,20S9.242,19.604,8.074,18.927z M17.61,17.641 c-0.757-1.8-2.538-3.068-4.61-3.068h-2c-2.072,0-3.854,1.269-4.61,3.068C4.923,16.182,4,14.176,4,12c0-4.337,3.663-8,8-8 s8,3.663,8,8C20,14.176,19.077,16.182,17.61,17.641z"
+          />
+          <path
+            d="M12,6c-2.28,0-4,1.72-4,4s1.72,4,4,4s4-1.72,4-4S14.28,6,12,6z M12,12c-1.178,0-2-0.822-2-2s0.822-2,2-2s2,0.822,2,2 S13.178,12,12,12z"
+          />
+        </svg>
+      </a>
+    </nav>
+    <div
+      style={
+        Object {
+          "backgroundColor": "black",
+          "height": "4rem",
+        }
+      }
+    />
+  </div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Mobile navigation bar unfold list snapshot test 1`] = `
+<div
+  data-radium={true}
+>
+  <div>
+    <nav
+      style={
+        Object {
+          "alignItems": "center",
+          "backgroundColor": "black",
+          "color": "white",
+          "display": "flex",
+          "height": "4rem",
+          "justifyContent": "space-between",
+          "left": "0",
+          "padding": "0 2rem",
+          "position": "fixed",
+          "top": "0",
+          "width": "100%",
+          "zIndex": "1000",
+        }
+      }
+    >
+      <div>
+        <button
+          data-radium={true}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          style={
+            Object {
+              "backgroundColor": "black",
+              "border": "none",
+              "borderRadius": "2px",
+              "color": "white",
+              "cursor": "pointer",
+              "fontSize": "1.8rem",
+              "margin": "0px 0px -2px 0",
+              "padding": "0",
+            }
+          }
+        >
+          <svg
+            fill="currentColor"
+            height="1em"
+            stroke="currentColor"
+            strokeWidth="0"
+            style={
+              Object {
+                "color": undefined,
+              }
+            }
+            viewBox="0 0 24 24"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 6H6V8H4zM4 11H6V13H4zM4 16H6V18H4zM20 8L20 6 18.8 6 9.2 6 8.023 6 8.023 8 9.2 8 18.8 8zM8 11H20V13H8zM8 16H20V18H8z"
+            />
+          </svg>
+        </button>
+        <ul
+          style={
+            Object {
+              "backgroundColor": "black",
+              "display": "flex",
+              "flexDirection": "column",
+              "left": "0",
+              "listStyle": "none",
+              "margin": "0",
+              "padding": "0.5rem 1.5rem",
+              "position": "absolute",
+              "top": "4rem",
+              "width": "100%",
+            }
+          }
+        >
+          <a
+            aria-current={null}
+            href="/class"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "0.9rem",
+                "padding": "0.5rem 0rem 0.5rem 0.4rem",
+                "textDecoration": "none",
+              }
+            }
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                  "fontSize": "0.9rem",
+                  "margin": "0px 15px -2px 10px",
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M5.058 8.005L11.972 11.872 14.653 10.382 7.819 6.477zM18 10.825L18 14 16 15 16 11.944 13.002 13.622 13 19.301 20 15.411 20 9.706zM11 13.621L4 9.705 4 15.411 11 19.301zM16.697 9.247L18.941 8 12.02 4.153 9.867 5.344z"
+                fill="none"
+              />
+              <path
+                d="M21.993,7.95c-0.003-0.072-0.01-0.145-0.029-0.214c-0.007-0.025-0.021-0.049-0.03-0.074 c-0.021-0.057-0.04-0.113-0.07-0.165c-0.016-0.027-0.038-0.049-0.057-0.075c-0.032-0.045-0.063-0.091-0.102-0.13 c-0.023-0.022-0.053-0.04-0.078-0.061c-0.039-0.032-0.075-0.067-0.12-0.094c-0.004-0.003-0.009-0.003-0.014-0.006 c-0.003-0.002-0.005-0.004-0.008-0.006l-8.979-4.99c-0.301-0.168-0.667-0.167-0.97-0.001l-9.021,4.99 C2.512,7.127,2.509,7.131,2.504,7.134c-0.003,0.001-0.007,0.002-0.01,0.004C2.459,7.158,2.433,7.187,2.4,7.211 C2.364,7.238,2.326,7.262,2.294,7.293C2.264,7.324,2.241,7.36,2.215,7.395C2.188,7.43,2.158,7.461,2.136,7.499 C2.11,7.542,2.096,7.591,2.077,7.638c-0.014,0.033-0.032,0.064-0.041,0.1c-0.019,0.067-0.025,0.139-0.029,0.21 C2.006,7.965,2,7.98,2,7.998v0.001V8v8c0,0.363,0.197,0.698,0.515,0.874l8.978,4.987l0.001,0.001c0.001,0,0.001,0,0.002,0.001 l0.02,0.011c0.043,0.024,0.09,0.037,0.135,0.054c0.032,0.013,0.063,0.03,0.097,0.039C11.829,21.988,11.915,22,12,22 s0.171-0.012,0.254-0.033c0.033-0.009,0.064-0.026,0.097-0.039c0.045-0.017,0.092-0.029,0.135-0.054l0.02-0.011 c0.001-0.001,0.001-0.001,0.002-0.001l0.001-0.001l8.978-4.987C21.803,16.698,22,16.363,22,16V8V7.999V7.998 C22,7.981,21.994,7.967,21.993,7.95z M11.972,11.872L5.058,8.005l2.762-1.528l6.834,3.905L11.972,11.872z M12.02,4.153L18.941,8 l-2.244,1.247l-6.83-3.903L12.02,4.153z M4,9.705l7,3.916v5.68l-7-3.89V9.705z M13,19.301l0.002-5.679L16,11.944V15l2-1v-3.175 l2-1.119v5.705L13,19.301z"
+              />
+            </svg>
+             课程
+          </a>
+          <a
+            aria-current={null}
+            href="/championship"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "0.9rem",
+                "padding": "0.5rem 0rem 0.5rem 0.4rem",
+                "textDecoration": "none",
+              }
+            }
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                  "fontSize": "0.9rem",
+                  "margin": "0px 15px -2px 10px",
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21,4h-3V3c0-0.553-0.447-1-1-1H7C6.447,2,6,2.447,6,3v1H3C2.447,4,2,4.447,2,5v3c0,4.31,1.799,6.91,4.819,7.012 c0.88,1.509,2.396,2.597,4.181,2.898V20H9v2h6v-2h-2v-2.09c1.784-0.302,3.301-1.39,4.181-2.898C20.201,14.91,22,12.31,22,8V5 C22,4.447,21.553,4,21,4z M4,8V6h2v6.021v0.809C4.216,12.078,4,9.299,4,8z M12,16c-2.206,0-4-1.794-4-4V4h8v8 C16,14.206,14.206,16,12,16z M18,12.83v-0.809V6h2v2C20,9.299,19.784,12.078,18,12.83z"
+              />
+            </svg>
+             比赛
+          </a>
+          <a
+            aria-current={null}
+            href="/teachers"
+            onClick={[Function]}
+            style={
+              Object {
+                "color": "white",
+                "fontSize": "0.9rem",
+                "padding": "0.5rem 0rem 0.5rem 0.4rem",
+                "textDecoration": "none",
+              }
+            }
+          >
+            <svg
+              fill="currentColor"
+              height="1em"
+              stroke="currentColor"
+              strokeWidth="0"
+              style={
+                Object {
+                  "color": undefined,
+                  "fontSize": "0.9rem",
+                  "margin": "0px 15px -2px 10px",
+                }
+              }
+              viewBox="0 0 24 24"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M21.928,11.607c-0.202-0.488-0.635-0.605-0.928-0.633V8c0-1.103-0.897-2-2-2h-6V4.61c0.305-0.274,0.5-0.668,0.5-1.11 C13.5,2.672,12.828,2,12,2s-1.5,0.672-1.5,1.5c0,0.442,0.195,0.836,0.5,1.11V6H5C3.897,6,3,6.897,3,8v2.997 C2.951,11,2.918,11.003,2.918,11.003C2.395,11.04,1.99,11.476,1.99,12v2c0,0.553,0.447,1,1,1H3v5c0,1.103,0.897,2,2,2h14 c1.103,0,2-0.897,2-2v-5c0.553,0,1-0.447,1-1v-1.938C22.011,11.909,21.988,11.753,21.928,11.607z M5,20V8h14l0.001,3.996 C19.001,11.998,19,11.999,19,12v2c0,0.002,0.001,0.003,0.001,0.005L19.002,20H5z"
+              />
+              <ellipse
+                cx="8.5"
+                cy="12"
+                rx="1.5"
+                ry="2"
+              />
+              <ellipse
+                cx="15.5"
+                cy="12"
+                rx="1.5"
+                ry="2"
+              />
+              <path
+                d="M8 16H16V18H8z"
+              />
+            </svg>
+             教师
+          </a>
+        </ul>
+      </div>
+      <a
+        href="/"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "white",
+            "flex": 0,
+            "fontFamily": "\\"Audiowide\\", sans-serif, monospace",
+            "fontSize": "1.8rem",
+            "textDecoration": "none",
+          }
+        }
+      >
+        iBot
+      </a>
+      <a
+        aria-current={null}
+        href="/login"
+        onClick={[Function]}
+        style={
+          Object {
+            "color": "white",
+          }
+        }
+      >
+        <svg
+          fill="currentColor"
+          height="1em"
+          stroke="currentColor"
+          strokeWidth="0"
+          style={
+            Object {
+              "color": undefined,
+              "fontSize": "1.6rem",
+              "margin": "0px 0px -2px 0",
+            }
+          }
+          viewBox="0 0 24 24"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12,8c-1.178,0-2,0.822-2,2s0.822,2,2,2s2-0.822,2-2S13.178,8,12,8z"
+            fill="none"
+          />
+          <path
+            d="M12,4c-4.337,0-8,3.663-8,8c0,2.176,0.923,4.182,2.39,5.641c0.757-1.8,2.538-3.068,4.61-3.068h2 c2.072,0,3.854,1.269,4.61,3.068C19.077,16.182,20,14.176,20,12C20,7.663,16.337,4,12,4z M12,14c-2.28,0-4-1.72-4-4s1.72-4,4-4 s4,1.72,4,4S14.28,14,12,14z"
+            fill="none"
+          />
+          <path
+            d="M13,16.572h-2c-1.432,0-2.629,1.01-2.926,2.354C9.242,19.604,10.584,20,12,20s2.758-0.396,3.926-1.073 C15.629,17.582,14.432,16.572,13,16.572z"
+            fill="none"
+          />
+          <path
+            d="M12,2C6.579,2,2,6.579,2,12c0,3.189,1.592,6.078,4,7.924V20h0.102C7.77,21.245,9.813,22,12,22s4.23-0.755,5.898-2H18 v-0.076c2.408-1.846,4-4.734,4-7.924C22,6.579,17.421,2,12,2z M8.074,18.927c0.297-1.345,1.494-2.354,2.926-2.354h2 c1.432,0,2.629,1.01,2.926,2.354C14.758,19.604,13.416,20,12,20S9.242,19.604,8.074,18.927z M17.61,17.641 c-0.757-1.8-2.538-3.068-4.61-3.068h-2c-2.072,0-3.854,1.269-4.61,3.068C4.923,16.182,4,14.176,4,12c0-4.337,3.663-8,8-8 s8,3.663,8,8C20,14.176,19.077,16.182,17.61,17.641z"
+          />
+          <path
+            d="M12,6c-2.28,0-4,1.72-4,4s1.72,4,4,4s4-1.72,4-4S14.28,6,12,6z M12,12c-1.178,0-2-0.822-2-2s0.822-2,2-2s2,0.822,2,2 S13.178,12,12,12z"
+          />
+        </svg>
+      </a>
+    </nav>
+    <div
+      style={
+        Object {
+          "backgroundColor": "black",
+          "height": "4rem",
+        }
+      }
+    />
+  </div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+</div>
+`;

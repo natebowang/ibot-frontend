@@ -18,9 +18,9 @@ const buttonStyle = {
     borderRadius: '2px',
     padding: '1px 5px',
     cursor: 'pointer',
-    ':hover': {
-        filter: 'brightness(85%)',
-    },
+    // ':hover': {
+    //     filter: 'brightness(85%)',
+    // },
     ':active': {
         filter: 'brightness(85%)',
     },
