@@ -1,0 +1,325 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  data-radium={true}
+>
+  <div
+    data-radium={true}
+  >
+    <div
+      data-radium={true}
+      id="displayWindow"
+      style={
+        Object {
+          "overflow": "hidden",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        data-radium={true}
+        onAnimationEnd={[Function]}
+        style={
+          Object {
+            "alignItems": "center",
+            "animationDuration": "20s",
+            "animationFillMode": "forwards",
+            "animationIterationCount": "infinite",
+            "animationName": "radium-animation-af5d144",
+            "animationPlayState": "running",
+            "animationTimingFunction": "linear",
+            "display": "flex",
+            "transform": "translate(-110px, 0)",
+          }
+        }
+      >
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award3.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "200px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award1.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "170px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award2.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "230px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award3.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "200px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award1.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "170px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award2.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "230px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award3.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "200px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award1.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "170px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award2.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "230px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award3.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "200px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award1.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "170px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award2.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "230px",
+              }
+            }
+          />
+        </div>
+        <div
+          data-radium={true}
+          style={
+            Object {
+              "padding": "10px",
+            }
+          }
+        >
+          <img
+            alt=""
+            src="award3.jpg"
+            style={
+              Object {
+                "backgroundColor": "#FFFAEE",
+                "height": "auto",
+                "objectFit": "cover",
+                "width": "200px",
+              }
+            }
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "@keyframes radium-animation-af5d144 {
+from{transform: translate(-110px, 0);}
+to{transform: translate(-770px, 0);}
+}
+",
+      }
+    }
+  />
+</div>
+`;

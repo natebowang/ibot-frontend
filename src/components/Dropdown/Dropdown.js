@@ -21,6 +21,7 @@ const Dropdown = ({toggleButtonIcon, toggleButtonStyle, children}) => {
         return () => {
             window.removeEventListener('click', windowClickHandler);
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const toggleHandler = (e) => {

@@ -12,6 +12,7 @@ import Footer from "../components/Footer/Footer";
 import Main from "../components/Main/Main";
 import NavBar from "../components/NavBar/NavBar";
 import Section from "../components/Section/Section";
+import {CarouselExample} from "../components/Carousel/Carousel";
 
 /**
  * Root component.
@@ -25,7 +26,7 @@ const App = () => (
                     <NavBar/>
                     <Main>
                         <Section bkImg={true}>
-                            haha
+                            <CarouselExample></CarouselExample>
                         </Section>
                     </Main>
                     <Footer/>
