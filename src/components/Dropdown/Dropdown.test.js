@@ -1,9 +1,9 @@
 import React from "react";
-import renderer from 'react-test-renderer';
+import TestRenderer from 'react-test-renderer';
 import {DropdownExample} from "./Dropdown";
 
 test('Dropdown menu snapshot test', () => {
-    const dropdown = renderer.create(
+    const dropdown = TestRenderer.create(
         <DropdownExample/>
     );
 

@@ -2,11 +2,13 @@ import React  from 'react';
 import {Provider} from "react-redux";
 
 import './App.css';
-import NavBar from "../components/NavBar/NavBar";
 import store from "../store/store";
 import {BrowserRouter} from "react-router-dom";
 import {StyleRoot} from "radium";
+
 import WindowResizeHandler from "../components/WindowResizeHandler/WindowResizeHandler";
+// import NavBar from "../components/NavBar/NavBar";
+import Footer from "../components/Footer/Footer";
 
 /**
  * Root component.
@@ -17,7 +19,7 @@ const App = () => (
             <BrowserRouter>
                 <StyleRoot>
                     <WindowResizeHandler/>
-                    <NavBar/>
+                    <Footer/>
                 </StyleRoot>
             </BrowserRouter>
         </Provider>

@@ -19,7 +19,7 @@ const LinksDropDown = () => {
             toggleButtonIcon={<BiListUl/>}
         >
             <ul style={ulStyle}>
-                <NavLink to={'/class'} style={linkStyle} activeStyle={activeLinkStyle}>
+                <NavLink to={'/classes'} style={linkStyle} activeStyle={activeLinkStyle}>
                     <BiPackage style={linkIconStyle}/> 课程
                 </NavLink>
                 <NavLink to={'/championship'} style={linkStyle}

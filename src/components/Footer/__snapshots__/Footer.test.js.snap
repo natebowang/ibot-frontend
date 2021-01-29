@@ -1,0 +1,516 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Desktop footer component snapshot test 1`] = `
+<div
+  data-radium={true}
+>
+  <footer
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "black",
+        "color": "white",
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "12.5rem",
+        "padding": "1rem",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-around",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <a
+          aria-current={null}
+          href="/teachers"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.8rem",
+              "fontWeight": "bold",
+              "margin": "0.8rem 1rem",
+              "padding": "0",
+              "textAlign": "center",
+              "textDecoration": "none",
+            }
+          }
+        >
+          教师
+        </a>
+        <a
+          aria-current={null}
+          href="/teachers"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          陈教师
+        </a>
+        <a
+          aria-current={null}
+          href="/teachers"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          王教师
+        </a>
+      </div>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <a
+          aria-current={null}
+          href="/classes"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.8rem",
+              "fontWeight": "bold",
+              "margin": "0.8rem 1rem",
+              "padding": "0",
+              "textAlign": "center",
+              "textDecoration": "none",
+            }
+          }
+        >
+          课程
+        </a>
+        <a
+          aria-current={null}
+          href="/classes"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          Lego搭建
+        </a>
+        <a
+          aria-current={null}
+          href="/classes"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          机器人
+        </a>
+      </div>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <a
+          aria-current={null}
+          href="/championship"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.8rem",
+              "fontWeight": "bold",
+              "margin": "0.8rem 1rem",
+              "padding": "0",
+              "textAlign": "center",
+              "textDecoration": "none",
+            }
+          }
+        >
+          比赛
+        </a>
+        <a
+          aria-current={null}
+          href="/championship"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          Robocup新西兰赛
+        </a>
+        <a
+          aria-current={null}
+          href="/championship"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          Robocup澳洲赛
+        </a>
+        <a
+          aria-current={null}
+          href="/championship"
+          onClick={[Function]}
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          Robocup国际赛
+        </a>
+      </div>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <h2
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.8rem",
+              "fontWeight": "bold",
+              "margin": "0.8rem 1rem",
+              "padding": "0",
+              "textAlign": "center",
+              "textDecoration": "none",
+            }
+          }
+        >
+          微信关注
+        </h2>
+        <p
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          微信 ：caomin19690307
+        </p>
+        <img
+          alt="QR"
+          src="mokeQR.jpg"
+          style={
+            Object {
+              "height": "auto",
+              "margin": "1.2rem 0rem",
+              "width": "60px",
+            }
+          }
+        />
+      </div>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <h2
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.8rem",
+              "fontWeight": "bold",
+              "margin": "0.8rem 1rem",
+              "padding": "0",
+              "textAlign": "center",
+              "textDecoration": "none",
+            }
+          }
+        >
+          联系我们
+        </h2>
+        <p
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          电话：0279689953
+        </p>
+        <p
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          邮箱：cx4648@gmail.com
+        </p>
+      </div>
+    </div>
+  </footer>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Mobile footer component snapshot test 1`] = `
+<div
+  data-radium={true}
+>
+  <footer
+    style={
+      Object {
+        "alignItems": "center",
+        "backgroundColor": "black",
+        "color": "white",
+        "display": "flex",
+        "flexDirection": "column",
+        "height": "12.5rem",
+        "padding": "1rem",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "alignItems": "flex-start",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-around",
+          "width": "100%",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <h2
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.8rem",
+              "fontWeight": "bold",
+              "margin": "0.8rem 1rem",
+              "padding": "0",
+              "textAlign": "center",
+              "textDecoration": "none",
+            }
+          }
+        >
+          微信关注
+        </h2>
+        <p
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          微信 ：caomin19690307
+        </p>
+        <img
+          alt="QR"
+          src="mokeQR.jpg"
+          style={
+            Object {
+              "height": "auto",
+              "margin": "1.2rem 0rem",
+              "width": "60px",
+            }
+          }
+        />
+      </div>
+      <div
+        style={
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "column",
+          }
+        }
+      >
+        <h2
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.8rem",
+              "fontWeight": "bold",
+              "margin": "0.8rem 1rem",
+              "padding": "0",
+              "textAlign": "center",
+              "textDecoration": "none",
+            }
+          }
+        >
+          联系我们
+        </h2>
+        <p
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          电话：0279689953
+        </p>
+        <p
+          style={
+            Object {
+              "color": "white",
+              "fontSize": "0.7rem",
+              "fontWeight": "bold",
+              "lineHeight": "1.8rem",
+              "margin": "0rem 0rem",
+              "padding": "0",
+              "textAlign": "left",
+              "textDecoration": "none",
+            }
+          }
+        >
+          邮箱：cx4648@gmail.com
+        </p>
+      </div>
+    </div>
+  </footer>
+  <style
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "",
+      }
+    }
+  />
+</div>
+`;

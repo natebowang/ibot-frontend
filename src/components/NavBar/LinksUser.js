@@ -8,7 +8,7 @@ import {BiBot, BiPackage, BiTrophy} from "react-icons/bi";
 const LinksUser = ({flex}) => {
     return (
         <ul style={{...linksUserBoxStyle, flex: flex}}>
-            <NavLink to={'/class'} style={linkStyle} activeStyle={activeLinkStyle}>
+            <NavLink to={'/classes'} style={linkStyle} activeStyle={activeLinkStyle}>
                 <BiPackage style={linkIconStyle}/> 课程
             </NavLink>
 

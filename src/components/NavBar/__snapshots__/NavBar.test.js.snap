@@ -54,7 +54,7 @@ exports[`Desktop navigation bar snapshot test 1`] = `
       >
         <a
           aria-current={null}
-          href="/class"
+          href="/classes"
           onClick={[Function]}
           style={
             Object {
@@ -451,7 +451,7 @@ exports[`Mobile navigation bar unfold list snapshot test 1`] = `
         >
           <a
             aria-current={null}
-            href="/class"
+            href="/classes"
             onClick={[Function]}
             style={
               Object {
