@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Section with background image snapshot test 1`] = `
+<section
+  data-radium={true}
+  style={
+    Object {
+      "backgroundColor": "#FFFAEE",
+      "backgroundImage": "url(curvyLines.png)",
+      "backgroundPositionY": "-5rem",
+      "backgroundRepeat": "no-repeat",
+      "backgroundSize": "120% 200%",
+    }
+  }
+/>
+`;
+
+exports[`Section without background image snapshot test 1`] = `
+<section
+  data-radium={true}
+  style={Object {}}
+/>
+`;

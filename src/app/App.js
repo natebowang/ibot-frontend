@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import {Provider} from "react-redux";
 
 import './App.css';
@@ -11,6 +11,7 @@ import WindowResizeHandler from "../components/WindowResizeHandler/WindowResizeH
 import Footer from "../components/Footer/Footer";
 import Main from "../components/Main/Main";
 import NavBar from "../components/NavBar/NavBar";
+import Section from "../components/Section/Section";
 
 /**
  * Root component.
@@ -22,7 +23,11 @@ const App = () => (
                 <StyleRoot>
                     <WindowResizeHandler/>
                     <NavBar/>
-                    <Main>test</Main>
+                    <Main>
+                        <Section bkImg={true}>
+                            haha
+                        </Section>
+                    </Main>
                     <Footer/>
                 </StyleRoot>
             </BrowserRouter>
