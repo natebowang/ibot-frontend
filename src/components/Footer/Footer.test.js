@@ -1,5 +1,5 @@
 import React from "react";
-import TestRenderer from 'react-test-renderer';
+import {create, act} from 'react-test-renderer';
 import Footer from "./Footer";
 import {Provider} from "react-redux";
 import store from "../../store/store";
@@ -7,9 +7,7 @@ import {BrowserRouter} from "react-router-dom";
 import {StyleRoot} from "radium";
 import WindowResizeHandler from "../WindowResizeHandler/WindowResizeHandler";
 
-const {act} = TestRenderer;
-
-const footer = TestRenderer.create(
+const footer = create(
     <Provider store={store}>
         <BrowserRouter>
             <StyleRoot>
