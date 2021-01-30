@@ -1,5 +1,5 @@
 import React from 'react';
-import qr from '../../images/mokeQR.jpg';
+import qr from './mokeQR.jpg';
 import {useSelector} from "react-redux";
 import {selectWiw} from "../../store/appSlice";
 import {FOOTER_HEIGHT, MOBILE_PORTRAIT_WIDTH} from "../../app/config";

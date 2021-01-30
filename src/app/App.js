@@ -4,15 +4,17 @@ import {Provider} from "react-redux";
 import './App.css';
 import store from "../store/store";
 import {BrowserRouter} from "react-router-dom";
+import {Route} from 'react-router';
 import {StyleRoot} from "radium";
 
+import Home from "../features/Home/Home";
 import WindowResizeHandler from "../components/WindowResizeHandler/WindowResizeHandler";
-// import NavBar from "../components/NavBar/NavBar";
-import Footer from "../components/Footer/Footer";
-import Main from "../components/Main/Main";
-import NavBar from "../components/NavBar/NavBar";
-import Section from "../components/Section/Section";
-import {CarouselExample} from "../components/Carousel/Carousel";
+import Login from "../features/Login/Login";
+import Signup from "../features/Signup/Signup";
+import Dashboard from "../features/Dashboard/Dashboard";
+import Teachers from "../features/Teachers/Teachers";
+import Championship from "../features/Championship/Championship";
+import Classes from "../features/Classes/Classes";
 
 /**
  * Root component.
@@ -23,13 +25,13 @@ const App = () => (
             <BrowserRouter>
                 <StyleRoot>
                     <WindowResizeHandler/>
-                    <NavBar/>
-                    <Main>
-                        <Section bkImg={true}>
-                            <CarouselExample></CarouselExample>
-                        </Section>
-                    </Main>
-                    <Footer/>
+                    <Route exact path={'/'}><Home/></Route>
+                    <Route path={'/login'}><Login/></Route>
+                    <Route path={'/signup'}><Signup/></Route>
+                    <Route path={'/dashboard'}><Dashboard/></Route>
+                    <Route path={'/classes'}><Classes/></Route>
+                    <Route path={'/championship'}><Championship/></Route>
+                    <Route path={'/teachers'}><Teachers/></Route>
                 </StyleRoot>
             </BrowserRouter>
         </Provider>

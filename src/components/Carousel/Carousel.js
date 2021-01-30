@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import Radium from "radium";
-import award0 from '../../images/award1.jpg';
-import award1 from '../../images/award2.jpg';
-import award2 from '../../images/award3.jpg';
+import award0 from './mokeAward1.jpg';
+import award1 from './mokeAward2.jpg';
+import award2 from './mokeAward3.jpg';
 
 /**
  * Image carousel/slideshow

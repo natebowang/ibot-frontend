@@ -1,7 +1,7 @@
 import React from "react";
 import Radium from "radium";
 
-import curvyLines from '../../images/curvyLines.png';
+import curvyLines from './curvyLines.png';
 
 const Section = ({children, bkImg = false}) => {
     return (
