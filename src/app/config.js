@@ -1,6 +1,6 @@
 // Mobile break point
 export const MOBILE_PORTRAIT_WIDTH = '500';
-export const MOBILE_PORTRAIT_MEDIA_QUERY = `@media (min-width: ${MOBILE_PORTRAIT_WIDTH}px)`;
+export const DESKTOP_PORTRAIT_MEDIA_QUERY = `@media (min-width: ${MOBILE_PORTRAIT_WIDTH}px)`;
 
 // Navigation bar height
 export const NAV_BAR_HEIGHT = '4rem';

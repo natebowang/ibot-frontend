@@ -6,7 +6,7 @@ exports[`Main component snapshot test 1`] = `
     Object {
       "display": "flex",
       "flexDirection": "column",
-      "minHeight": "calc( 100vh - 12.5rem - 4rem )",
+      "height": "calc( 100vh - 12.5rem - 4rem )",
     }
   }
 >
