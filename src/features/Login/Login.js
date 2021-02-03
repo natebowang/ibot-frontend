@@ -4,34 +4,24 @@ import Main from "../../components/Main/Main";
 import Footer from "../../components/Footer/Footer";
 import {DESKTOP_PORTRAIT_MEDIA_QUERY} from "../../app/config";
 import Radium from "radium";
+import {login} from "../../store/userSlice";
+import {useDispatch} from "react-redux";
 
 const Login = Radium(() => {
-    const [user, setUser] = useState({username: '', password: ''});
+    const [userProfile, setUserProfile] = useState({username: '', password: ''});
+    const dispatch = useDispatch();
 
     const handleChange = (e) => {
         e.preventDefault();
-        setUser({
-            ...user,
+        setUserProfile({
+            ...userProfile,
             [e.target.name]: e.target.value,
         });
     };
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        // let response = await fetch('./user.json', {
-        //     method: 'POST',
-        //     headers: {
-        //         "Content-Type": "application/json",
-        //     },
-        //     body: JSON.stringify(user),
-        // });
-        let response = await fetch('./user.json');
-        const message = await response.json();
-        if (response.ok) {
-            console.log(message.username);
-        } else {
-            console.log('error');
-        }
+        dispatch(login(userProfile));
     };
 
     return (
@@ -48,7 +38,7 @@ const Login = Radium(() => {
                         </label>
                         <input name={'username'}
                                style={{...itemStyle}}
-                               value={user.username}
+                               value={userProfile.username}
                                onChange={handleChange}
                         />
                         <label htmlFor={'password'} style={{...itemStyle}}>
@@ -56,7 +46,7 @@ const Login = Radium(() => {
                         </label>
                         <input name={'password'}
                                style={{...itemStyle}}
-                               value={user.password}
+                               value={userProfile.password}
                                onChange={handleChange}
                         />
                         <button style={{...itemStyle}}>
