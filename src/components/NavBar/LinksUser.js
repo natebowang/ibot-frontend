@@ -1,6 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import {BiBot, BiPackage, BiTrophy} from "react-icons/bi";
+import {PRIMARY_COLOR} from "../../app/config";
 
 /**
  * Link and user icons for mobile screen
@@ -61,7 +62,7 @@ const userStyle = {
 
 const activeLinkStyle = {
     fontWeight: 'bold',
-    color: "#6BBDDB"
+    color: PRIMARY_COLOR
 };
 
 export default LinksUser;

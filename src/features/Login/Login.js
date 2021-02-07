@@ -2,10 +2,16 @@ import React, {useState} from "react";
 import NavBar from "../../components/NavBar/NavBar";
 import Main from "../../components/Main/Main";
 import Footer from "../../components/Footer/Footer";
-import {DESKTOP_PORTRAIT_MEDIA_QUERY} from "../../app/config";
+import {
+    DESKTOP_PORTRAIT_MEDIA_QUERY,
+    PRIMARY_COLOR,
+    SECONDARY_COLOR
+} from "../../app/config";
 import Radium from "radium";
 import {login} from "../../store/userSlice";
 import {useDispatch} from "react-redux";
+import Section from "../../components/Section/Section";
+import Button from "../../components/Button/Button";
 
 const Login = Radium(() => {
     const [userProfile, setUserProfile] = useState({username: '', password: ''});
@@ -28,54 +34,70 @@ const Login = Radium(() => {
         <>
             <NavBar/>
             <Main>
-                <section style={loginWindowStyle}>
-                    <h3>
-                        Login
-                    </h3>
+                <Section style={loginPaneStyle}>
                     <form style={formStyle} onSubmit={handleSubmit}>
-                        <label htmlFor={'username'} style={{...itemStyle}}>
+                        <h3>
+                            Log in
+                        </h3>
+                        <label htmlFor={'username'}
+                               style={{
+                                   marginTop: '2rem',
+                                   marginBottom: '0.5rem',
+                               }}>
                             username
                         </label>
                         <input name={'username'}
-                               style={{...itemStyle}}
+                               style={{
+                                   marginBottom: '3rem',
+                               }}
                                value={userProfile.username}
                                onChange={handleChange}
                         />
-                        <label htmlFor={'password'} style={{...itemStyle}}>
+                        <label htmlFor={'password'}
+                               style={{
+                                   marginBottom: '0.5rem',
+                               }}>
                             Password
                         </label>
                         <input name={'password'}
-                               style={{...itemStyle}}
+                               style={{
+                                   marginBottom: '3rem',
+                               }}
                                value={userProfile.password}
                                onChange={handleChange}
                         />
-                        <button style={{...itemStyle}}>
+                        <Button style={{
+                            backgroundColor: PRIMARY_COLOR,
+                            marginBottom: '3rem',
+                        }}>
                             Login
-                        </button>
+                        </Button>
                     </form>
-                </section>
+                </Section>
             </Main>
             <Footer/>
         </>
     )
 });
 
-const loginWindowStyle = {
-    backgroundColor: 'yellow',
-    padding: '1rem',
-    height: '100%',
+const loginPaneStyle = {
+    backgroundColor: SECONDARY_COLOR,
+    padding: '3rem',
     [DESKTOP_PORTRAIT_MEDIA_QUERY]: {
-        backgroundColor: 'red',
+        backgroundColor: 'transparent',
     }
 };
 
 const formStyle = {
+    backgroundColor: 'transparent',
     display: 'flex',
     flexDirection: 'column',
-};
-
-const itemStyle = {
-    margin: '0.5rem 0'
+    margin: 'auto',
+    [DESKTOP_PORTRAIT_MEDIA_QUERY]: {
+        padding: '3rem',
+        maxWidth: '600px',
+        backgroundColor: SECONDARY_COLOR,
+    }
 };
 
 export default Login;

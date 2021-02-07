@@ -15,7 +15,7 @@ exports[`Primary button snapshot test 1`] = `
       "border": "none",
       "borderRadius": "2px",
       "cursor": "pointer",
-      "padding": "1px 5px",
+      "padding": "8px 5px",
     }
   }
 >

@@ -1,6 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
 import {BiUserCircle} from 'react-icons/bi';
+import {PRIMARY_COLOR} from "../../app/config";
 
 /**
  * User icon for mobile screen
@@ -24,7 +25,7 @@ const linkIconStyle = {
 
 const activeLinkStyle = {
     fontWeight: 'bold',
-    color: "#6BBDDB"
+    color: PRIMARY_COLOR
 };
 
 export default User;

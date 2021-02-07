@@ -16,7 +16,7 @@ const Button = Radium(({style, onClick: clickHandler, children}) => {
 const buttonStyle = {
     border: 'none',
     borderRadius: '2px',
-    padding: '1px 5px',
+    padding: '8px 5px',
     cursor: 'pointer',
     // ':hover': {
     //     filter: 'brightness(85%)',

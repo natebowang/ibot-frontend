@@ -6,7 +6,7 @@ import {
     BiBot,
     BiTrophy,
 } from 'react-icons/bi';
-import {NAV_BAR_HEIGHT} from "../../app/config";
+import {NAV_BAR_HEIGHT, PRIMARY_COLOR} from "../../app/config";
 import Dropdown from "../Dropdown/Dropdown";
 
 /**
@@ -80,7 +80,7 @@ const linkStyle = {
 
 const activeLinkStyle = {
     fontWeight: 'bold',
-    color: "#6BBDDB"
+    color: PRIMARY_COLOR
 };
 
 const linkIconStyle = {

@@ -7,3 +7,7 @@ export const NAV_BAR_HEIGHT = '4rem';
 
 // Footer height
 export const FOOTER_HEIGHT = '12.5rem';
+
+// Color
+export const PRIMARY_COLOR = '#6BBDDB';
+export const SECONDARY_COLOR = '#FFFAEE';
