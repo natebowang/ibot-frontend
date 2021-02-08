@@ -1,27 +1,60 @@
 import {createSlice} from "@reduxjs/toolkit";
+import wrongPasswordFormatMsgGenerator from "./wrongPasswordFormatMsgGenerator";
+import xss from "xss";
 
 const userSlice = createSlice({
     name: 'user',
     initialState: {
-        username: '',
-        avatar: null,
-        incorrectUsernamePwdFlag: false,
+        userProfile: {
+            username: '',
+            email: '',
+            phone: null,
+            avatar: null,
+            user_state: 1
+        },
+        loginErrorMessage: {
+            wrongUsernameFormat: '',
+            wrongPasswordFormat: '',
+        },
+        signupErrorMessage: {
+            wrongUsernameFormat: '',
+            wrongPasswordFormat: '',
+        },
     },
     reducers: {
         updateUserProfile: (state, action) => {
-            state.username = action.payload.username;
-            state.avatar = action.payload.avatar;
+            state.userProfile = {
+                ...state.userProfile,
+                ...action.payload,
+            };
+            state.loginErrorMessage = {
+                wrongUsernameFormat: '',
+                wrongPasswordFormat: '',
+            };
+            state.signupErrorMessage = {
+                wrongUsernameFormat: '',
+                wrongPasswordFormat: '',
+            };
         },
-        updateIncorrectUsernamePwdFlag: (state, action) => {
-            state.incorrectUsernamePwdFlag = action.payload.incorrectUsernamePwdFlag;
-        }
+        updateLoginErrorMessage: (state, action) => {
+            state.loginErrorMessage = {
+                ...state.loginErrorMessage,
+                ...action.payload
+            };
+        },
+        updateSignupErrorMessage: (state, action) => {
+            state.signupErrorMessage = {
+                ...state.signupErrorMessage,
+                ...action.payload
+            };
+        },
     }
 });
 
-export const {updateUserProfile, updateIncorrectUsernamePwdFlag} = userSlice.actions;
+export const {updateUserProfile, updateLoginErrorMessage, updateSignupErrorMessage} = userSlice.actions;
 export const userReducer = userSlice.reducer;
 
-export const login = (userProfile) => async (dispatch) => {
+export const login = (userNamePassword) => async (dispatch) => {
     // const response = await fetch('./user.json', {
     //     method: 'POST',
     //     headers: {
@@ -38,22 +71,43 @@ export const login = (userProfile) => async (dispatch) => {
     }
 };
 
-export const signup = (userProfile) => async (dispatch) => {
+export const signup = (userNamePassword) => async (dispatch) => {
     const response = await fetch('./api/signup', {
         method: 'POST',
         headers: {
             "Content-Type": "application/json",
         },
-        body: JSON.stringify(userProfile),
+        body: JSON.stringify({
+            username: xss(userNamePassword.username),
+            password: userNamePassword.password
+        }),
     });
-    const message = await response.json();
+    const body = await response.json();
     if (response.ok) {
-        console.log(message);
+        dispatch(updateUserProfile(body));
     } else {
-        console.log('error');
+        // console.log(body);
+        let wrongUsernameFormatMsg = '';
+        let wrongPasswordFormatMsg = '';
+        if (body.userExists) {
+            // wrongUsernameFormatMsg = 'User exists. ';
+            wrongUsernameFormatMsg = '用户已存在。';
+        }
+        if (body.wrongUsernameFormat) {
+            // wrongUsernameFormatMsg = 'That doesn\'t look like an email address. ';
+            wrongUsernameFormatMsg = '不符合电子邮件地址格式。';
+        }
+        if (body.wrongPasswordFormat) {
+            wrongPasswordFormatMsg = wrongPasswordFormatMsgGenerator(body.passwordValidationResultArray);
+        }
+        dispatch(updateSignupErrorMessage({
+            wrongUsernameFormat: wrongUsernameFormatMsg,
+            wrongPasswordFormat: wrongPasswordFormatMsg,
+        }));
     }
 };
-export const selectUsername = state => state.user.username;
-export const selectAvatar = state => state.user.avatar;
-export const selectIncorrectUsernamePwdFlag = state => state.user.incorrectUsernamePwdFlag;
+
+export const selectUserProfile = state => state.user.userProfile;
+export const selectLoginErrorMessage = state => state.user.loginErrorMessage;
+export const selectSignupErrorMessage = state => state.user.signupErrorMessage;
 

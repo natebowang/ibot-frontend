@@ -44,11 +44,12 @@ const Login = Radium(() => {
                                    marginTop: '2rem',
                                    marginBottom: '0.5rem',
                                }}>
-                            username
+                            Email
                         </label>
                         <input name={'username'}
                                style={{
                                    marginBottom: '3rem',
+                                   lineHeight: '1.6rem',
                                }}
                                value={userProfile.username}
                                onChange={handleChange}
@@ -62,6 +63,7 @@ const Login = Radium(() => {
                         <input name={'password'}
                                style={{
                                    marginBottom: '3rem',
+                                   lineHeight: '1.6rem',
                                }}
                                value={userProfile.password}
                                onChange={handleChange}
@@ -70,7 +72,7 @@ const Login = Radium(() => {
                             backgroundColor: PRIMARY_COLOR,
                             marginBottom: '3rem',
                         }}>
-                            Login
+                            Log in
                         </Button>
                     </form>
                 </Section>
