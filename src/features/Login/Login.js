@@ -12,6 +12,7 @@ import {login} from "../../store/userSlice";
 import {useDispatch} from "react-redux";
 import Section from "../../components/Section/Section";
 import Button from "../../components/Button/Button";
+import {Link} from "react-router-dom";
 
 const Login = Radium(() => {
     const [userProfile, setUserProfile] = useState({username: '', password: ''});
@@ -70,10 +71,18 @@ const Login = Radium(() => {
                         />
                         <Button style={{
                             backgroundColor: PRIMARY_COLOR,
-                            marginBottom: '3rem',
+                            marginBottom: '0.8rem',
                         }}>
                             Log in
                         </Button>
+                        <p style={{
+                            margin: '0 2px 3rem 2px',
+                            fontSize: '0.8rem',
+                        }}>
+                            <Link to={'/signup'} style={{textDecoration: 'none', color: 'black'}}>
+                                还未加入？点击注册
+                            </Link>
+                        </p>
                     </form>
                 </Section>
             </Main>

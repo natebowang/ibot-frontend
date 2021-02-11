@@ -2,11 +2,15 @@ import React from "react";
 import {NavLink} from "react-router-dom";
 import {BiBot, BiPackage, BiTrophy} from "react-icons/bi";
 import {PRIMARY_COLOR} from "../../app/config";
+import defaultAvatar from "./defaultAvatar.jpg";
+import {useSelector} from "react-redux";
+import {selectUserProfile} from "../../store/userSlice";
 
 /**
  * Link and user icons for mobile screen
  */
 const LinksUser = ({flex}) => {
+    const userProfile = useSelector(selectUserProfile);
     return (
         <ul style={{...linksUserBoxStyle, flex: flex}}>
             <NavLink to={'/classes'} style={linkStyle} activeStyle={activeLinkStyle}>
@@ -21,15 +25,22 @@ const LinksUser = ({flex}) => {
                 <BiBot style={linkIconStyle}/> 教师
             </NavLink>
 
-            <div/>
-
-            <NavLink to={'/login'} style={userStyle} activeStyle={activeLinkStyle}>
-                登录
-            </NavLink>
-
-            <NavLink to={'/signup'} style={userStyle} activeStyle={activeLinkStyle}>
-                注册
-            </NavLink>
+            {userProfile.username ?
+                <NavLink to={'/dashboard'} style={linkStyle} activeStyle={activeLinkStyle}>
+                    <img src={defaultAvatar} alt={userProfile.username.split('@')[0]}
+                         style={imageStyle}/>
+                </NavLink>
+                :
+                <>
+                    <div/>
+                    <NavLink to={'/login'} style={userStyle} activeStyle={activeLinkStyle}>
+                        登录
+                    </NavLink>
+                    <NavLink to={'/signup'} style={userStyle} activeStyle={activeLinkStyle}>
+                        注册
+                    </NavLink>
+                </>
+            }
         </ul>
     )
 };
@@ -63,6 +74,12 @@ const userStyle = {
 const activeLinkStyle = {
     fontWeight: 'bold',
     color: PRIMARY_COLOR
+};
+
+const imageStyle = {
+    display: 'inline-block',
+    width: '1.6rem',
+    borderRadius: '50%',
 };
 
 export default LinksUser;
