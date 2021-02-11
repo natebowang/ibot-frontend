@@ -5,6 +5,8 @@ import xss from "xss";
 const userSlice = createSlice({
     name: 'user',
     initialState: {
+        showLogin: false,
+        showSignup: false,
         userProfile: {
             username: '',
             email: '',
@@ -51,7 +53,12 @@ const userSlice = createSlice({
     }
 });
 
-export const {updateUserProfile, updateLoginErrorMessage, updateSignupErrorMessage} = userSlice.actions;
+export const {
+    updateUserProfile,
+    updateLoginErrorMessage,
+    updateSignupErrorMessage
+} = userSlice.actions;
+
 export const userReducer = userSlice.reducer;
 
 export const login = (userNamePassword) => async (dispatch) => {
@@ -107,6 +114,8 @@ export const signup = (userNamePassword) => async (dispatch) => {
     }
 };
 
+export const selectShowLogin = state => state.user.showLogin;
+export const selectShowSignup = state => state.user.showSignup;
 export const selectUserProfile = state => state.user.userProfile;
 export const selectLoginErrorMessage = state => state.user.loginErrorMessage;
 export const selectSignupErrorMessage = state => state.user.signupErrorMessage;

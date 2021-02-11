@@ -16,6 +16,7 @@ import {BiShow, BiHide} from 'react-icons/bi';
 import * as emailValidator from 'email-validator';
 import PasswordValidator from "password-validator";
 import wrongPasswordFormatMsgGenerator from "../../store/wrongPasswordFormatMsgGenerator";
+import {Link} from "react-router-dom";
 
 let passwordValidator = new PasswordValidator();
 passwordValidator.is().min(6)             // Minimum length 6
@@ -155,11 +156,19 @@ const Signup = Radium(() => {
                         </p>
                         <Button style={{
                             backgroundColor: PRIMARY_COLOR,
-                            marginBottom: '3rem',
+                            marginBottom: '0.8rem',
                         }}>
                             {/*Sign up*/}
                             注册
                         </Button>
+                        <p style={{
+                            margin: '0 2px 3rem 2px',
+                            fontSize: '0.8rem',
+                        }}>
+                            <Link to={'/login'} style={{textDecoration: 'none', color: 'black'}}>
+                                已经是会员？点击登录
+                            </Link>
+                        </p>
                     </form>
                 </Section>
             </Main>
@@ -177,6 +186,7 @@ const iconStyle = {
 const signupPaneStyle = {
     backgroundColor: SECONDARY_COLOR,
     padding: '3rem',
+    borderRadius: '2px',
     [DESKTOP_PORTRAIT_MEDIA_QUERY]: {
         backgroundColor: 'transparent',
     }
