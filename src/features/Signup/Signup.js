@@ -102,6 +102,7 @@ const Signup = Radium(() => {
                                value={userNamePassword.username}
                                onChange={handleChange}
                                onFocus={handleFocus}
+                               autoComplete={'off'}
                         />
                         <p style={{
                             margin: '0 2px 3rem 2px',
